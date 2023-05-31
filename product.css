@@ -1,0 +1,135 @@
+
+/* Adding css for subnavigation */
+.subnav{
+  padding: 1em 0 1.5em 5em;
+  border-bottom: 1px solid black;
+  margin-bottom: 4em;
+}
+
+/* Removing text decoration */
+ a{
+  text-decoration: none;
+  color:gray;
+ }
+ .button button a{
+  font-weight: lighter;
+  color: white;
+ }
+
+ /* Making grid block */
+.gridblog{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(25em,auto));
+  width: 90%;
+  margin: 5em auto;
+  justify-content: center;
+}
+
+/* CSS for image in grid */
+.gridblog img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* Adjusting the width of card */
+
+.gridblog .card{
+  width: 80%;
+  position: relative;
+}
+
+/* CSS for Middle transition */
+.gridblog .middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+/* Opacity on hover image */
+.gridblog .card:hover img {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+/* Opacity on hove middle */
+.gridblog .card:hover .middle{
+  opacity: 1;
+}
+
+/* CSS for button */
+.button button{
+  border: none;
+  width: 10em;
+  height: 3em;
+  cursor: pointer;
+
+/* Making button flex */
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* CSS for view details button*/
+.button button:nth-child(1){
+  background-color: black;
+  color: white;
+}
+
+/* CSS for add to cart button */
+.button button:nth-child(2){
+  background-color:#41449b;
+  color: white;
+}
+
+/* Making button div flex and aligning */
+.load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15em;
+}
+
+/* Adding css to button */
+.load button{
+  cursor: pointer;
+  background-color: #b7b7b7;
+  border: none;
+  width: 15em;
+  height: 3em;
+  color: white;
+}
+
+/* Adding Button on hover */
+button:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.5rem 1.5rem rgba(33, 54, 124, 0.2);
+}
+
+/* Adding Button on active */
+button:active{
+  opacity: 0.8;
+}
+
+
+@media screen and (max-width: 900px){
+  .gridblog{    
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em,auto));
+    width: 90%;
+    margin: 5em auto;
+    gap: 2em;
+} 
+
+
+}

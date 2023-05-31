@@ -1,0 +1,167 @@
+/* Making navbar flex */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Making navbar flex */
+.navbar{
+  display: flex;
+  width:85%;
+  margin: auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navitem{
+  display: flex;
+}
+
+/* CSS for the navigation name */
+.navitem a{
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+/* Adding hover to links */
+.navitem a:hover{
+  color: rgb(80, 80, 235);
+}
+
+/* Adding background Image */
+.container{
+  background-image: url('images/wallpaperflare.com_wallpaper.jpg');   
+  color: white;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.pagetitle,.title-search{
+  width: 85%;
+  margin:auto;
+}
+
+.item1{
+  border-bottom: 1.5px solid white;
+}
+
+.title-search{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+}
+.title-search h2{
+  font-weight: normal;
+}
+.title-search input[type="text"]{
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  color: white;
+  width: 22em;
+  padding: 5px;
+  padding-left:10px;
+}
+
+.pagetitle{
+  padding-bottom: 6em;
+}
+
+/* Making container flex */
+.mainbody{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Increasing width of paragraph in container */
+.info p{
+  padding-top: 2em;
+  width: 40%;
+}
+
+/* Making Form flex */
+.form{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  margin-bottom: 20em;
+}
+
+/* Adding CSS to the button */
+.button button{
+  padding:0.5em 2em 0.5em 2em;
+  background-color: black;
+  color: white;
+  margin-right: 1em;
+}
+
+/* Adding Button on hover */
+button:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.5rem 1.5rem rgba(33, 54, 124, 0.4);
+}
+
+/* Adding button on active */
+button:active{
+  opacity: 0.8;
+}
+
+/* Adding CSS to links */
+.button a{
+  font-weight: bold;
+  color: red;
+}
+
+/* Adding padding to input box */
+.form input{
+  padding: 1em 5em;
+}
+
+/* Adding padding inside the input box */
+input[type = text], input[type=password]{
+  padding-left: 1em;
+}
+
+/* CSS for footer */
+.foot{
+  padding: 5em;
+  margin: 30em auto auto auto ;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+/* Increasing width of footer paragraph */
+.foot p{
+  width: 18em;
+}
+
+/* Making footer flex */
+footer{
+  display: flex;
+  gap:2em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Making page end flex */
+.pagend{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 5em;
+}
+
+@media screen and (max-width: 900px){
+
+  *{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,134 @@
+
+.left{
+  flex:1 200px;
+}
+/* Adding css for subnavigation */
+.subnav{
+  padding: 1em 0 1.5em 5em;
+  border-bottom: 1px solid black;
+  margin-bottom: 4em;
+}
+
+/* Removing text decoration */
+ a{
+  text-decoration: none;
+  color:gray
+ }
+
+ /* Adjusting size of the body */
+.size{
+  width: 70%;
+  margin: auto;
+}
+ /* Adjusting mainbody padding and making it flex */
+ .cards{
+   display: flex;
+   gap:5em;
+   flex-wrap:wrap;
+ }
+
+.left img{
+  width: 100%;
+}
+
+.images{
+  position: relative;
+}
+
+/* Adding background color to discount and making absolute div */
+.discount{
+  background-color: orange;
+  padding: 7%;
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  gap:2em; 
+}
+
+/* Size of bottom images */
+.bottom img{
+  padding-top: 0.5em;
+}
+
+/* Adjusting width of right div */
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex:4;
+}
+
+/* Changing font family of tile */
+.right h2{
+  font-family: "Montserrat,Thin";
+}
+
+.right p{
+  width: 60%;
+}
+
+/* Making Button div flex */
+.buttons{
+  padding-top: 2em;
+  display: flex;
+  gap: 3em;
+}
+
+/* Adding Button on hover */
+button:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.5rem 1.5rem rgba(33, 54, 124, 0.2);
+}
+
+/* Adding Button on active */
+button:active{
+  opacity: 0.8;
+}
+
+/* CSS for button */
+.buttons button{
+  border: none;
+  width: 15em;
+  height: 3em;
+  color: white;
+  cursor: pointer;
+}
+
+/* CSS for the first button */
+.buttons button:nth-child(1){
+  background-color:black;
+}
+
+/* CSS for the second button */
+.buttons button:nth-child(2){
+  background-color: #42459d;
+}
+
+.bottomtitle{
+  margin-top: 15em;
+  text-align: center;
+}
+
+fieldset{
+  border: none;
+  border-top: 1px solid black;
+}
+fieldset legend{
+  margin: auto;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 900px){
+  .gridblog{    
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em,auto));
+    width: 90%;
+    margin: 5em auto;
+    gap: 2em;
+} 
+}

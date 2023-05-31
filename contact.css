@@ -1,0 +1,76 @@
+/* Making container flex */
+.mainbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Increasing width of paragraph in container */
+.info p{
+  padding-top: 2em;
+  width: 30%;
+  margin: auto;
+}
+
+/* Making Form flex */
+.form{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  margin-bottom: 20em;
+}
+
+/* CSS for input field  */
+.form input[type="text"], .form input[type="email"]{
+  width: 22em;
+  padding: 1em;
+  padding-left:10px;
+}
+
+/* CSS for message input */
+.form .message input{
+  padding-bottom: 9em;
+}
+
+/* Adding CSS to the button */
+.button button{
+  padding:1em 7.2em;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Adding Button on hover */
+button:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.5rem 1.5rem rgba(33, 54, 124, 0.4);
+}
+
+/* Adding Button on active */
+button:active{
+  opacity: 0.8;
+}
+/* Adding CSS to links */
+.button a{
+  font-weight: bold;
+  color: red;
+}
+
+/* Adjusting width of page title and title search */
+.pagetitle,.title-search{
+  width: 85%;
+  margin:auto;
+}
+
+@media screen and (max-width: 900px){
+
+  .button{
+    width: 80%;
+  }
+
+}
+
